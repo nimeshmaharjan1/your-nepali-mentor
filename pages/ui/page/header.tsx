@@ -17,8 +17,16 @@ const Header: React.FC = () => {
               Blogs
             </div>
           </Link>
-          <div>Tutorials</div>
-          <div>Contact</div>
+          <Link href="/blogs">
+            <div className={`${pathname === "/tutorials" ? "bg-red-500" : ""}`}>
+              Tutorials
+            </div>
+          </Link>
+          <Link href="/blogs">
+            <div className={`${pathname === "/contact" ? "bg-red-500" : ""}`}>
+              Contact
+            </div>
+          </Link>
         </div>
       </div>
     </div>
